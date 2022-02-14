@@ -87,7 +87,7 @@ void loop() {
       lcd.setCursor(0, 3);
       lcd.print("MOTOR OFF -Auto-");
     }
-    else {
+    if(value < 40) {
       Serial.println("Dat kho thieu nuoc");
       lcd.setCursor(0, 2);
       lcd.print(" Dat kho thieu nuoc ");
